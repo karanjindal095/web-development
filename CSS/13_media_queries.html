@@ -1,0 +1,68 @@
+<!-- 
+? #Media queries are used to make websites Responsive    
+* Means to change websites style in another device.
+*
+* Syntax:
+*  @media not|only mediatype and (expressions){
+*        CSS-Code;
+*    }
+*
+*(1) mediatype: Screen , All , Print , speech                                                                                   
+*(2) expression : condition ,oreintation (landscape , potrait)
+*
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queries</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        
+        /* 
+        @media not|only mediatype and (expressions){
+            CSS-Code;
+        }
+        */
+        
+        @media only screen and (max-width: 455px) {
+            body{
+                background-color: rgb(218, 55, 218);
+            }
+        }
+
+        @media screen and (orientation: landscape) {
+            body{
+                border: 5px solid green;
+            }
+        }
+
+        .boxes{
+            display: flex;
+        }
+        .box{
+            width: 344px;
+            height: 344px;
+            background-color: steelblue;
+            padding: 3px;
+            margin: 3px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        i am a box
+    </div>
+
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

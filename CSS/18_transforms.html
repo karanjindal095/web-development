@@ -1,0 +1,80 @@
+<!-- 
+? #Transform:
+
+!Properties
+* rotate() : ( 45deg , 1 turn = 360deg )
+* rotateX(40deg); (rotate about X axis )
+* rotateY(40deg); (rotate about Y axis )
+* rotateZ(40deg); (rotate about Z axis )
+* rotate3d(); ()
+
+* scale() : ( get 1.6 times greater )
+* scaleX(1.6); (1.6 times greater with respect to X axis )
+* scaleY(1.6); 
+* scaleZ(1.6); 
+* scale3d(1.6); 
+
+* skew() : ( get strech )
+* skewX(35deg); 
+* skewY(35deg); 
+
+* translate(35%) : (translate or sift with 35%) 
+* translateX(45px); (Shift with respect to X axis )
+* translateY(); 
+* translateZ(); 
+* translate3d(); 
+
+? origin: x-axis ,y-axis;
+* transform-origin: 0% 0%;
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <style>
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: beige;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* transform: rotate(45deg); */
+            /* transform: rotate(0.5turn); */
+            /* transform: rotateX(40deg); */
+            /* transform: rotateZ(40deg); */
+
+            /* transform: scale(1.5); */
+            /* transform: scaleY(1.5); */
+            /* transform: scaleZ(1.5); */
+
+            /* transform:skew(36deg); */
+
+            /* transform: translate(34px); */
+            /* transform: translateX(34px); */
+
+            transform-origin: 0% 0%;
+            transform: rotate(330deg);
+
+
+        }
+
+        .container{
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+</body>
+</html>

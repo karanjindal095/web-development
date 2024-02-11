@@ -1,0 +1,72 @@
+<!-- 
+* #Sizing Units:
+* 1. px - pixels (1/96 of an inch) (1vh = 10px)
+* 2. vw - viewport width (eg x% of screen width)
+* 3. vh - viewport height (eg x% of screen height)
+* 4. em - increase the inherit font size by x (if em = 2,px=16 then size = 2*16=32 ) 
+* 5. rem - root k font size ka x multiple (if rem = 2, html = 16px * 2 = 32)
+* 6. vmin - apply to width or height which is minimum (eg:w in mobile & h in pc)
+* 7. vmax - apply to width or height which is maximum (eg:h in mobile & w in pc)
+* 8. % = inherit will become x % of parent class
+* min-height - will maintain a min height but increase according to text
+* min-width - will maintain a min width but adjust according to text
+* margin = auto; - centers a div (works for only block level element not for inline element)
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box{
+            box-sizing: border-box;
+            background-color: aqua;
+            border: 2px solid black;
+            /* width: 1,920px; */
+            /* width: 100vw; */
+            width: 80vw;
+            margin: auto;
+            height: 10vh;
+        }
+        .container{
+            box-sizing: border-box;
+            background-color: aqua;
+            border: 2px solid black;
+            width: 80vw;
+            margin: 23px auto;
+            height: 80vh;
+            font-size: 16px;
+            
+        }
+
+        .container p{
+            font-size: 2em;
+        }
+
+        .mycont{
+            border: 2px solid black;
+            box-sizing: border-box;
+            margin: auto;
+            background-color: red;
+            color: yellow;
+            font-size: 22px;
+            width: 80vmax;
+            
+        }
+    
+    </style>
+ </head>
+ <body>
+    <div class="box">This is a box</div>
+    <div class="container"> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas assumenda nam repellendus est officia nemo sed perferendis, quae odit ullam unde placeat porro libero similique, aliquid impedit quod. Voluptatem consectetur suscipit itaque eaque aperiam provident aspernatur natus perferendis nihil sint beatae rem nobis odit harum, sunt inventore, ullam quo dolorem iste? Fugit quam temporibus beatae facilis! </p> </div>
+
+    <div class="mycont">this is another div </div>
+ </body>
+ </html>

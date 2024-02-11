@@ -1,0 +1,35 @@
+CSS - Cascading style sheets
+
+Types of css :
+1. Inline css   : style attribute 
+2. Internal css : <style> tag
+3. External css : .css file (link tag)
+
+basic syntax of selector:
+
+selector{
+    declaration or properties
+}
+
+eg:
+div{
+    color: red
+}
+
+#Types of Selectors
+1. div{ } = element selector
+2. ( . )  = class selector
+3. ( # )  = id selector
+4. ( > )  = child selector
+5. (   )  = descendant selector
+6. ( * )  = universal selector
+7. Pseudo selector 
+   a:visited     (a = anchor tag)
+   a:link         
+   a:active          
+   a:hover       
+   a:first-hild
+   div p:first-child 
+   div p:nth-child(2) 
+
+margin = auto; - centers a div (works for only block level element not for inline element)

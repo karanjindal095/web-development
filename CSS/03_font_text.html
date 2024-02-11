@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts And Text</title>
+    <style>
+        h1{
+            /* Font style */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .font{
+            font-family: 'Courier New', Courier, monospace;
+            font-style: italic;
+
+            /* weight : bold */
+            font-weight: 600;
+
+            font-size: 20px;
+            color: red;
+
+        }
+
+        .text{
+            /* height b\w the lines */
+            line-height: 2;
+            letter-spacing: 1px;
+
+        }
+
+        h2{
+            text-transform: capitalize; /* captialize, uppercase ,lowercase */
+            text-decoration: underline;
+            text-decoration-color: rgb(0, 157, 255);
+            text-decoration-style: wavy; /* dotted, dashed , wavy */
+            text-decoration-thickness:5px;
+            text-indent: 50px;
+            text-align: center;
+        }
+        .lorem{
+            border: 2px solid red;
+            width: 45px;
+            text-overflow: ellipsis;
+            /* text-overflow: clip; */
+            /* overflow: hidden; */
+            word-break: break-all;
+        }
+    
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Font</h1>
+        <p class="font">this is a font</p>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, similique omnis repellendus in adipisci iste reiciendis tenetur impedit quae cumque est reprehenderit totam dolor architecto consequuntur nobis quaerat quidem! Doloribus.</p>
+        <h2>about fonts</h2>
+        <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, similique omnis repellendus in adipisci iste reiciendis tenetur impedit quae cumque est reprehenderit totam dolor architecto consequuntur nobis quaerat quidem! Doloribus.</p>
+    </div>
+    
+</body>
+</html>

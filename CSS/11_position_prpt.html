@@ -1,0 +1,95 @@
+<!-- 
+? #Position property
+* position: By default the position of the elements is static   
+* Important Note : if parent is positioned then all the child will position with reespect to the parent.
+* Exection of above : tranform,filter, perspective properties are positioned with respect to first parent even if parent is not positioned
+? Types of positions :
+* (1) Relative : we can use (top,bottom,left,right ,z-index:1)
+* (2) Absolute : change position with relative to it's nearest positioned ancestor (parent).
+* (3) Fixed : fix the position permanently on the page even if scrolled
+* (4) Sticky : the positioned element get stick to that position
+* z-index : element having more z index will appear fornt  
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            padding: 3px;
+            border: 2px solid black;
+            margin: 3px;
+            /* height: 133px; */
+            height: 433px;
+            width: 80vw;
+        }
+        
+        .box1 {
+            background-color: aqua;
+            /* z-index: 1;
+            position: absolute; */
+            /* with relative to html tag  */
+            /* top: 0px;  
+            left: 0px; */
+
+            /* sticky position */
+            
+            position: sticky;
+            top: 0px;
+            height: 50px;
+            margin: -23px;
+            width: auto;
+        }
+        
+        .box2 {
+            background-color: bisque;
+            /* position: relative;
+            top: 34px;
+            left: 56px; */
+        }
+        
+        .box3 {
+            background-color: coral;
+            /* position: fixed;
+            bottom: 0px;
+            left: 8vw;
+            height: 111px; */
+        }
+        
+        .box4 {
+            background-color: blueviolet;
+        }
+        
+        
+        .parent {
+            margin: 25px;
+            padding: 27px;
+            border: 3px solid purple;
+            /* position: relative; */
+
+            /* with relative to parent class */
+            /* position: absolute; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+
+</body>
+
+</html>

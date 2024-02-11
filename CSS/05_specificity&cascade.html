@@ -1,0 +1,44 @@
+<!-- 
+? #Cascade Algorithm : used for solving the conflicts where multiple css rules apply to html elements.
+
+? @ Four distinct stages of algorithm 
+* 1. Position and Order of apperance : last position CSS rule appear 
+* 2. Specificity : specifies which CSS selector has the strongest match
+*    @Order of specificity:  
+*     (A) Inline style  (1000 pts)
+*     (B) ID selector    (100 pts)
+*     (C) Class or Attribute selector (10 pts)
+*     (D) Element selector  (1 pts)
+*     (E) Universal selector (0 pts)
+* 3. Origin : User agent stylesheet CSS added by your browser (if you don't added your CSS)
+* 4. Importance : " !important " gives priority or importance  to elements
+* 
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascade Algorithm</title>
+    <style>
+        /* 1 + 10 = 11 pts */
+        h1.cred{
+            color: red;
+        }
+        .cgreen{
+            color: green !important;
+        }
+        /* 10 pts */
+        .cpurple{
+            color: purple;
+        }
+    
+    
+    </style>
+</head>
+<body>
+    <h1 class="cpurple cred cgreen">karan jindal</h1>
+    
+</body>
+</html>

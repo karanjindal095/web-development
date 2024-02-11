@@ -1,0 +1,62 @@
+<!-- 
+    # Forms : These are used to collect data from the user
+    Eg- sign up/ login / help requests / contact me
+    
+    <form> form content  </form>
+    
+    # Action in Form 
+    = Action attribute is used to define what action needs to be performed when a form is submitted
+    syntax:
+    <form  action= "/action.php"> 
+        
+    #Form Elements : Input
+    <input type= "text" placeholder= "Enter name ">
+        
+    @ type= "type of input you want"
+        01 text : for simple text
+            <input type= "text" placeholder= "Enter name ">
+
+        02 password : for password
+            <input type="password" placeholder="Password"> 
+
+        03 Radio: for multiple choice ques but select only 1
+            <input type="radio" value="class X" name="class">calss X
+
+        04 checkbox : for multiple choice ques , can select more than 1
+            <input type="checkbox" value="maths" name="class" >maths
+            
+        05 sumit : button for anything like submit
+            <input type="submit" value="submit">
+
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <main>
+        <form action="/action.php">
+            <!-- text -->
+            <input type="text" placeholder="Username">
+            <!-- password -->
+            <input type="password" placeholder="Password">
+
+            <!-- radio -->
+            <input type="radio" value="Class XI" name="class">class XI
+            <input type="radio" value="Class XII" name="class">class XII
+
+            <!-- checkbox -->
+            <input type="checkbox" value="maths" name="class" >maths
+            <input type="checkbox" value="python" name="class" >python
+            <input type="checkbox" value="c++" name="class" >c++
+            
+            <!-- submit -->
+            <input type="submit" value="submit">
+        </form>
+    </main>
+    
+ </body>
+ </html>

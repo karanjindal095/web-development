@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        .container{
+            border: 2px solid rgb(255, 255, 255);
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 80px 400px 0 400px;
+        }
+        
+        .item{
+            height: 200px;
+            width: 200px;
+            margin: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .name{
+            margin: 3px;
+            padding: 10px;
+            transition: all ease 0.5s;
+            font-size: large;
+            text-shadow: 0 0 5px #03e9f4,0 0 15px #03e9f4,0 0 25px #03e9f4,0 0 100px #03e9f4;
+        }
+        
+        .heart{
+            height: 70px;
+            width: 70px;
+            background-color: #f20044;
+            position: relative;
+            rotate: -45deg;
+            box-shadow: -10px 10px 90px #f20044;
+            animation: dil 0.6s linear infinite;
+        }
+
+        @keyframes dil{
+            0%{
+               scale: 1.1; 
+            }
+            50%{
+                scale: 1.0;
+            }
+            100%{
+                scale: 0.9; 
+            }
+        }
+
+        .heart::before{
+            content: "";
+            height: 70px;
+            width: 70px;
+            background-color: #f20044;
+            position: absolute;
+            top: -50%;
+            border-radius: 50px;
+            box-shadow: -10px -10px 90px #f20044;
+        }
+        .heart::after{
+            content: "";
+            height: 70px;
+            width: 70px;
+            background-color: #f20044;
+            position: absolute;
+            right: -50%;
+            border-radius: 50px;
+            box-shadow: 10px 10px 90px #f20044;
+        }
+
+        h1:hover{
+            text-shadow: 0 0 5px #03e9f4,0 0 15px #03e9f4,0 0 25px #03e9f4,0 0 100px #03e9f4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item name"> 
+            <h1>
+                Karan
+            </h1>
+        </div>
+
+        <div class="item heart"></div>
+
+        <div class="item name"> 
+            <h1>
+                Jindal
+            </h1>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!-- 
+* overflow : overflow of text content from the box     
+* (1) properties : scroll, auto (scroll),
+* white-space: nowrap; (horizontal scroll)
+* text-overflow: ellipsis; (.. will appear in text overflow condition)
+* overflow: x y; or overflow-x ,overflow-y
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .box{
+            width: 30vw;
+            height: 10vh;
+            border: 2px solid black;
+            overflow: scroll;
+            /* overflow: auto; */
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ipsum perferendis magnam ipsam saepe eum inventore quam dolore magni qui tempore libero, quas eius tempora quidem dolores in quod sint quibusdam sequi nemo totam eligendi. Voluptatum accusantium itaque culpa, facilis repudiandae doloremque eum est nostrum?
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!-- 
+* #Variables - var()
+* CSS style - :root{ }
+*
+* sytax: 
+* :root{
+*   --color: red; (this is global declaration)
+*   --defpad: 34px; (var can store all datatype)
+*  }
+* local declaration : if defined in other block 
+*
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root {
+            /* Global variable */
+
+            --color: rgb(169, 57, 234);
+            --seccolor: rgb(222, 106, 232);
+            --defpad: 34px;
+            --defop: 0.4;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav {
+            background-color: var(--color);
+        }
+
+        ul {
+            display: flex;
+        }
+        
+        ul li {
+            list-style: none;
+
+            padding: var(--defpad);
+            border: 4px solid var(--seccolor);
+            /* opacity: var(--defop); */
+        }
+
+        ul li:first-child{
+            /* Local variable */
+
+            --color: rgb(223, 55, 145);
+            background-color: var(--color);
+
+            /* if variable is not declared and we try to access it other color given will apply */
+            /* background-color: var(--color,green); */
+        }
+
+        .container {
+            background-color: var(--seccolor);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nesciunt quidem cumque dolor quas qui quo odio
+        ea architecto! Officiis id, dolores architecto a fugit vitae perferendis ex beatae nostrum praesentium placeat
+        quasi quae, porro error neque aut soluta provident nobis molestias cum deserunt. Rem.
+    </div>
+</body>
+
+</html>

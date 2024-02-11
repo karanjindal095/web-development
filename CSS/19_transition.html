@@ -1,0 +1,65 @@
+<!-- 
+? #Transition:
+! 4 properties of Transition:
+
+* transition-property: ; (on which class you want to apply),(if we write 'all' then it aplly to all)
+
+* transition-duration: ; (for how much time)
+
+* transition-timing-function: ; (how fast or slow it goes)
+! 5 parameters: 
+    ?1. ease
+    ?2. ease-in
+    ?3. ease-out 
+    ?4. ease-in-out
+    ?5. cubic() (set it from inspect)
+
+* transition-delay: ; (how such time after transition take place)
+
+!We can use these 4 transition properties together:
+
+* transition: all 3s ease-in-out 1s;
+
+
+
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition</title>
+    <style>
+        .container{
+            background-color: antiquewhite;
+            width: 50vw;
+            height: 40vh;
+        }
+        
+        .box{
+            background-color:aquamarine;
+            width: 5vw;
+            height: 4vh;
+
+            transition-property: transform;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 1s;
+
+            transition: all 3s ease-in-out 1s;
+        }
+
+        .transform{
+            transform: translateX(10vw) translateY(10vh);
+            background-color: yellowgreen;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box transform"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: aqua;
+        } */
+
+        /* .box::first-line{
+            color: red;
+        } */
+
+        /* Apply to all elements */
+        /* .boxes *{
+            color: green;
+            border: 2px solid black;
+        } */
+
+        /* [data-color="primary"]{
+            margin-top: 45px;
+            padding: 45px;
+        } */
+        
+        /* grouping */
+        /* p,a, .box,[data-color="primary"]{
+            margin-top: 45px;
+            padding: 45px;
+        } */
+
+        /* even & odd & number */
+        /* .box:nth-child(even){
+            background-color:aqua ;
+        } */
+
+        .box:nth-last-child(1){
+            background-color: beige;
+        }
+
+        /* Dynamically insertion of Element using CSS using Before And After */
+        .boxes::before{
+            content: "Karan Jindal";
+            color: blueviolet;
+        }
+
+        .boxes::after{
+            content: "Web Development OP";
+            color: red;
+        }
+        
+        /* sytling of selected Element on Web Page */
+        ::selection{
+            color: aqua;
+            background-color: black;
+        }
+
+        .box::first-letter{
+            color: peru;
+            font-size: 30px;
+        }
+
+        input::placeholder{
+            color: goldenrod;            
+            padding:35px;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box" data-color="primary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis architecto suscipit, fuga deserunt 
+        </div>
+
+        <div class="box">i am a box</div>
+
+        <div class="box">i am a box</div>
+
+        <input type="text" placeholder="type your name">
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!-- 
+* #We can convert block element to inline element:
+* display: inline;   (can't change width & height from the top)
+* display: inline-block; (can change w & h)
+* display: none; (space will be empty)
+* visibility : hidden; (hide the element not space)
+*
+* display: flow-root;
+*  it will fit all the overflow elements into the border 
+*
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid blue;
+            /* display: inline; */
+            display: inline-block;
+            padding: 45px;
+            margin: 55px;
+            width: 344px;
+
+
+        }
+        .box1{
+            /* display: none; */
+            /* visibility: hidden; */
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1"> 
+        i am a box 
+    </div>
+    
+    <div class="box"> 
+        i am box 2 
+    </div>
+
+    <span class="">
+        I am karan
+    </span>
+
+    <span class="">
+        Age 20
+    </span>
+    
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!-- 
+    #Labels
+    = gives label to form tag
+        <label for="id1">
+            <input type="radio" value="class X" name="class">
+        </label>
+    
+    #46 checkbox 
+    
+    #67 select : for dropdown options
+        <select name="" id="">
+            <option value="" > delhi </option>
+            <option value="" > delhi </option>
+        </select>
+
+    #75 for feedback or text box 
+        <textarea name="" id="" placeholder=""  row="" cols(columns)="">feedback </textarea>
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <form action="/action.php">
+            <input type="text" placeholder="Username"> <br> <br>
+            <input type="password" placeholder="Password"> <br>
+            
+            <h5>Your class</h5>
+
+            <label for="101">            
+                <input type="radio" value="class X" name="class" id="101">class X
+            </label>
+
+            <br> <br>
+
+            <label for="102">
+                <input type="radio" value="class XI" name="class" id="102">class XI        
+            </label>
+
+            <!-- checkbox -->
+            <section>
+                <h5>Your Favorite Subjects</h5>
+                <label for="maths">
+                    <input type="checkbox" value="maths" name="subject" id="101">maths
+                </label>
+
+                <label for="python">
+                    <input type="checkbox" value="python" name="subject" id="102">python
+                </label>
+
+                <label for="c++">
+                    <input type="checkbox" value="c++" name="subject" id="103">c++
+                </label>
+
+                <label for="Java">
+                    <input type="checkbox" value="Java" name="subject" id="104">Java
+                </label>
+
+            </section>
+            
+            <!-- Select -->
+            <select name="city">
+                <option value="delhi">delhi</option>
+                <option value="punjab">punjab</option>
+                <option value="haryana">haryana</option>
+                <option value="mumbai">mumbai</option>
+            </select>   
+<br> <br>
+            <!-- feedback form  -->
+            <textarea name="feedback" id="101" placeholder="Please give your comments" cols="30" rows="10">feedback</textarea> <br> <br>
+
+            <!-- submit -->
+            <input type="submit" value="submit">
+
+        </form>
+    </main>
+</body>
+</html>

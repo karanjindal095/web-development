@@ -1,0 +1,72 @@
+<!-- 
+? #object-fit
+    
+* object-fit: cover;
+* object-fit: contain;
+* object-fit: fit;
+* object-fit: scale-down;
+
+? #background-image
+
+* background-position: center center;
+
+* background-repeat: no-repeat;
+* background-repeat: repeat-x;
+* background-repeat: repeat-y;
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object fit and position</title>
+    <style>
+        .container{
+            height: 634px;
+            width: 688px;
+
+            width: 466px;
+            height: 488px;
+
+            border: 2px solid black;
+            background-color: azure;
+
+            /* background image */
+            background-image: url("lions.jpeg");
+            background-position: center center;
+
+            background-repeat: no-repeat;
+            background-repeat: repeat-x;
+            background-repeat: repeat-y;
+        }
+
+        img{
+            width: 466px;
+            height: 488px;
+
+            /* it will crop the image */
+            object-fit:cover;
+
+            /* we can crop acc to choice */
+            /* object-position: top right; */
+            /* object-position: bottom right; */
+            /* object-position: 10px 20px; */
+            
+            /* it will fit full image in given H & W */
+            /* object-fit:contain; */
+            /* object-fit: 50% 50%; */
+
+            /* By default object fit property */
+            /* object-fit: fill; */
+
+            /* object-fit: scale-down; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="lions.jpeg" alt=""> -->
+    </div>
+</body>
+</html>
